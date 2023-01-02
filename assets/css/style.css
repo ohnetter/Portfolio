@@ -1,7 +1,117 @@
+:root {
+    --primary-color: #f8f4d9;
+    --secondary-color: #354556;
+    --font-color: #354556;
+    --bg-color: #f8f4d9;
+    --heading-color: #292922;
+}
+
+[data-theme="dark"] {
+    --primary-color: #f8f4d9;
+    --secondary-color: #f8f8f8;
+    --font-color: #bac9a2;
+    --bg-color: #212529;
+    --heading-color: #b79d4a;
+}
+
 body {
-background-color: #f8f4d9;
+    background-color: var(--bg-color);
+    color: var(--font-color);
+
+    /*other styles*/
+    .....
+}
+
+h1 {
+    color: var(--secondary-color);
+
+    /*other styles*/
+    .....
+}
+
+a {
+    color: var(--primary-color);
+
+    /*other styles*/
+    .....
+}
+/*
+body {
+    background-color: #f8f4d9;
 font-family: Montserrat;
 }
+*/
+
+/*Simple css to style it like a toggle switch*/
+.theme-switch-wrapper {
+  display: flex;
+  align-items: center;
+
+  em {
+    margin-left: 10px;
+    font-size: 1rem;
+  }
+}
+.theme-switch {
+  display: inline-block;
+  height: 34px;
+  position: relative;
+  width: 60px;
+}
+
+.theme-switch input {
+  display:none;
+}
+
+.slider {
+  background-color: #555b57;
+  bottom: 0;
+  cursor: pointer;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transition: .4s;
+}
+
+.slider:before {
+  background-color: #e4b1ac;
+  bottom: 4px;
+  content: "";
+  height: 26px;
+  left: 4px;
+  position: absolute;
+  transition: .4s;
+  width: 26px;
+}
+
+input:checked + .slider {
+  background-color: #e2f0ba;
+}
+
+input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+
+.theme-btn {
+  color: #f8f4d9;
+  background-color: #555b57;
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+}
+
 .snowflake {
   color: #fff;
   font-size: 1em;
@@ -24,6 +134,9 @@ font-family: Montserrat;
 color: #000;		
 }
 
+.navbar-brand {
+    display: block;
+}
 .welcome {
 color:#4d444c;
     
@@ -33,7 +146,6 @@ h1 {
 }
 h2 {
     font-family: monserrat;
-    color: #555b57;
  
 }
 
@@ -47,15 +159,12 @@ h2 {
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
 }
 .pic {
- size: 8px;
- position: relative;
- left: 369px;
+display: block;
+margin: 0 auto;
 }
 .dev {
- size: 10px;
- position: relative;
- left: 300px;
-
+display: block;
+margin: 0 auto;
 
 }
 .mycol2 {
@@ -63,18 +172,24 @@ h2 {
 }
 
 .card-body {
+    display: block;
+margin: 0 auto;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
 
 }
 .btn {
+    display: block;
+    margin: 0 auto;
+    margin-left: 90px;
+    margin-right: 90px;
     background-color: #e4b1ac;
     color: #e2f0ba;
-    position: absolute;
-    left: 170px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.29);
 
 }
  .skills {
+    display: block;
+margin: 0 auto;
      background-color:#fbd4bf;  
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19); 
  }
@@ -94,11 +209,20 @@ div {
     color: #faf9f7;
     box-shadow: 0 5px 10px rgba(0.15, 0.15, 0.15, 0.15);
 }
+#fname, #lname, #subject{
+    border-radius: 8px;
+}
+.sbjct {
+    width: 700px;
+}
+
 .submit-btn {
+    display: block;
+    margin: 0 auto;
+    margin-left: 580px;
+    margin-right: 580px;
    background-color: #e4b1ac;
     color: #e2f0ba;
-    position: relative;
-    left: 0px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19);
 }
 .fa-github-alt {
