@@ -7,9 +7,9 @@
 }
 
 [data-theme="dark"] {
-    --primary-color: #f8f4d9;
+    --primary-color: #f;
     --secondary-color: #f8f8f8;
-    --font-color: #bac9a2;
+    --font-color: #4d444c;
     --bg-color: #212529;
     --heading-color: #b79d4a;
 }
@@ -146,6 +146,7 @@ h1 {
 }
 h2 {
     font-family: monserrat;
+    color: #555b57;
  
 }
 
