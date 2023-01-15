@@ -22,6 +22,7 @@ body {
     .....
 }
 
+
 h1 {
     color: var(--secondary-color);
 
@@ -189,6 +190,7 @@ margin: 0 auto;
  .skills {
     display: block;
 margin: 0 auto;
+height: 50px;
      background-color:#fbd4bf;  
    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.19); 
  }
@@ -196,30 +198,35 @@ div {
     display: block;
 }
 .html {
+  padding: 10px;
     margin-right: 69px;
     margin-left: 22px;
      
 }
 .footer {
+  display: block;
     padding-top: 60px;
-    margin-top: auto;
+    margin-top: 0 auto;
     padding-bottom: 60px;
     background-color: #e2f0ba;
     color: #faf9f7;
     box-shadow: 0 5px 10px rgba(0.15, 0.15, 0.15, 0.15);
 }
 #fname, #lname, #subject{
+   display: block;
+    margin: 0 auto;
     border-radius: 8px;
 }
 .sbjct {
+   display: block;
+  margin: 0 auto;
     width: 700px;
 }
 
 .submit-btn {
     display: block;
     margin: 0 auto;
-    margin-left: 580px;
-    margin-right: 580px;
+   width: 180px;
     border-color: #2f303c;
    background-color: #e4b1ac;
     color: #e2f0ba;
