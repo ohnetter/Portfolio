@@ -226,6 +226,7 @@ div {
  display: block;
   margin: 0 auto;
  height: 300px;
+ width: 60%;
 }
 
 .submit-btn {
